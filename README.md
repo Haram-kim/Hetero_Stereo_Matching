@@ -100,7 +100,7 @@ time_estimation: True
 ```
 
 #### Visualize
-show disparity inlier requires ground truth disparity.  
+'show disparity inlier' requires ground truth disparity.  
 If you want to see all estimated disparity of the proposed method, please change the flag 'show_disparity' False to True  
 If you want to see estimated disparity on edges of the proposed method, please change the flag 'semi_dense'  False to True  
 ```
