@@ -21,7 +21,7 @@ You can install dependent libararies by running :
 pip install opencv pycuda pyyaml scipy tqdm h5py hdf5plugin
 ```
 
-# Installation % Running guide
+# Installation & Running guide
 
 0. Download DSEC data set
 [DSEC](https://dsec.ifi.uzh.ch/dsec-datasets/download/)
@@ -63,11 +63,15 @@ python main.py $data path$ $data sequence name$
 Example) python main.py /c/DSEC/ interlaken_00_c
 
 
-# Configuration settings
+## Configuration settings
 
-## config/config.yaml
+### config/config.yaml
 
-### Feature tracker
+#### Feature tracker
+feature num - the number of features  
+track_err_thres - KLT traker error threshold  
+track_win_size - KLT tracker window size  
+extract_win_size - Feature extractor window size  
 ```
 feature num: 1000  
 track_err_thres: 10
@@ -77,7 +81,11 @@ track_win_size:
 extract_win_size: 12
 ```
 
-### Disparity estimator
+#### Disparity estimator
+disparity_range - disparity range (0 - max_disp)  
+kernel_radius - patch radius  
+ncc_gaussian_std - standard deviation of Gaussian filter  
+msd_gap - Maximum Shift Distance interval  
 ```
 disparity_range: 100
 kernel_radius: 12
@@ -85,13 +93,16 @@ ncc_gaussian_std: 2
 msd_gap: 10
 ```
 
-### Time estimation mode
+#### Time estimation mode
+If you want to estimate the computation time, you can run the time_estimation mode.  
 ```
 time_estimation: True
 ```
 
-### Visualize
-#### show disparity inlier requires ground truth disparity
+#### Visualize
+show disparity inlier requires ground truth disparity.  
+If you want to see all estimated disparity of the proposed method, please change the flag 'show_disparity' False to True  
+If you want to see estimated disparity on edges of the proposed method, please change the flag 'semi_dense'  False to True  
 ```
 show_disparity_inlier: True
 show_disparity: True
