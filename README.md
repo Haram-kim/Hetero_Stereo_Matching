@@ -38,7 +38,7 @@ DSEC [[Download]](https://dsec.ifi.uzh.ch/dsec-datasets/download/)
 ['interlaken_00_g_processed_data'](https://larr.snu.ac.kr/haramkim/DSEC/interlaken_00_g_processed_data.hdf5) (14.2GB)  
 (Still, 'interlaken_00_c_calibration' must be download.)  
 
-The directory structure should be :
+Directory structure :
 ```
 /PATH_TO_DSEC
 ├────interlaken_00_c
