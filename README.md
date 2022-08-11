@@ -36,7 +36,7 @@ DSEC [[Download]](https://dsec.ifi.uzh.ch/dsec-datasets/download/)
 ['interlaken_00_e_processed_data'](https://larr.snu.ac.kr/haramkim/DSEC/interlaken_00_e_processed_data.hdf5) (26.9GB)  
 ['interlaken_00_f_processed_data'](https://larr.snu.ac.kr/haramkim/DSEC/interlaken_00_f_processed_data.hdf5) (14.6GB)  
 ['interlaken_00_g_processed_data'](https://larr.snu.ac.kr/haramkim/DSEC/interlaken_00_g_processed_data.hdf5) (14.2GB)  
-(Still, '$data sequence$_calibration' must be download.)  
+(Still, '[data sequence]_calibration' must be download.)  
 
 Directory structure :
 ```
@@ -73,7 +73,7 @@ $ git clone https://github.com/Haram-kim/Hetero_Stereo_Matching.git
 2. Run the code
 ```
 $ cd HSM
-$ python main.py $PATH_TO_DSEC$ $data sequence$
+$ python main.py [PATH_TO_DSEC] [data sequence]
 Example)  $ python main.py /c/DSEC/ interlaken_00_c
 ```
 
