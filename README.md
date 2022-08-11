@@ -4,6 +4,7 @@ Hetero Stereo Matching
 The source code is released under the **MIT License**.
 
 # Project Page
+You can see the high-quality video at:
 [https://haram-kim.github.io/Hetero_Stereo_Matching/](https://haram-kim.github.io/Hetero_Stereo_Matching/)
 
 # Prerequisites
