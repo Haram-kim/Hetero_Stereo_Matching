@@ -28,7 +28,14 @@ pip install opencv pycuda pyyaml scipy tqdm h5py hdf5plugin
 # Installation & Running guide
 
 0. Download DSEC data set  
-[[Download]](https://dsec.ifi.uzh.ch/dsec-datasets/download/)  
+DSEC [[Download]](https://dsec.ifi.uzh.ch/dsec-datasets/download/)  
+We require 16GB RAM to preprocess the DSEC data.   
+If you want to download only the preprocessed data, please download:  
+['interlaken_00_c_processed_data' (8.71GB)](https://larr.snu.ac.kr/haramkim/DSEC/interlaken_00_c_processed_data.hdf5)
+['interlaken_00_d_processed_data' (34.4GB)](https://larr.snu.ac.kr/haramkim/DSEC/interlaken_00_d_processed_data.hdf5)
+['interlaken_00_e_processed_data' (26.9GB)](https://larr.snu.ac.kr/haramkim/DSEC/interlaken_00_e_processed_data.hdf5)
+['interlaken_00_f_processed_data' (14.6GB)](https://larr.snu.ac.kr/haramkim/DSEC/interlaken_00_f_processed_data.hdf5)
+['interlaken_00_g_processed_data' (14.2GB)](https://larr.snu.ac.kr/haramkim/DSEC/interlaken_00_g_processed_data.hdf5)
 
 The directory structure should be :
 ```
@@ -43,6 +50,8 @@ The directory structure should be :
 │    ├────interlaken_00_c_images_rectified_right
 │    ├────interlaken_00_c_disparity_timestamps.txt
 │    └────interlaken_00_c_image_timestamps.txt
+│
+├────interlaken_00_c_processed_data.hdf5 (After you load the data or download only essential data.)
 
 ...
 
