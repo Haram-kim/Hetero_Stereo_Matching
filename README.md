@@ -27,8 +27,8 @@ pip install opencv pycuda pyyaml scipy tqdm h5py hdf5plugin
 
 # Installation & Running guide
 
-0. Download DSEC data set
-[[Download]](https://dsec.ifi.uzh.ch/dsec-datasets/download/)
+0. Download DSEC data set  
+[[Download]](https://dsec.ifi.uzh.ch/dsec-datasets/download/)  
 
 The directory structure should be :
 ```
