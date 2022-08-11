@@ -14,7 +14,7 @@ We use [OpenCV](http://opencv.org) to visualize and manipulate images.
 
 ## CUDA
 We use [CUDA](https://developer.nvidia.com/cuda-toolkit) for parallel computation.  
-[Download](https://developer.nvidia.com/cuda-downloads) [Installation guide](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/)
+[[Download]](https://developer.nvidia.com/cuda-downloads) [[Installation guide]](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/)
 
 ### pyCUDA for python
 We use python wrapper [pyCUDA](https://documen.tician.de/pycuda/) for CUDA.
@@ -28,7 +28,7 @@ pip install opencv pycuda pyyaml scipy tqdm h5py hdf5plugin
 # Installation & Running guide
 
 0. Download DSEC data set
-[DSEC](https://dsec.ifi.uzh.ch/dsec-datasets/download/)
+[[Download]](https://dsec.ifi.uzh.ch/dsec-datasets/download/)
 
 The directory structure should be :
 ```
