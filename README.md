@@ -74,7 +74,7 @@ $ git clone https://github.com/Haram-kim/Hetero_Stereo_Matching.git
 ```
 python main.py $PATH_TO_DSEC$ $data sequence name$
 ```
-Example) 
+    Example) 
 ```
 python main.py /c/DSEC/ interlaken_00_c
 ```
