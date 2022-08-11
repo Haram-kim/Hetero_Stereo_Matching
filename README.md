@@ -16,7 +16,7 @@ We use [OpenCV](http://opencv.org) to visualize and manipulate images.
 We use [CUDA](https://developer.nvidia.com/cuda-toolkit) for parallel computation.  
 [[Download]](https://developer.nvidia.com/cuda-downloads) [[Installation guide]](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/)
 
-### pyCUDA for python
+### pyCUDA
 We use python wrapper [pyCUDA](https://documen.tician.de/pycuda/) for CUDA.
 
 ## Others
