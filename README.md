@@ -1,7 +1,6 @@
 Hetero Stereo Matching
 =======================
 
-The code works best on Ubuntu 20.04  
 The source code is released under the **MIT License**.
 
 # Project Page
@@ -29,6 +28,8 @@ pip install opencv pycuda pyyaml scipy tqdm h5py hdf5plugin
 ```
 
 # Installation & Running guide
+
+The code works best on Ubuntu 20.04  
 
 0. Download DSEC data set  
 DSEC [[Download]](https://dsec.ifi.uzh.ch/dsec-datasets/download/)  
