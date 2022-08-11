@@ -6,7 +6,7 @@ The code works best on Ubuntu 20.04
 
 # Prerequisites
 ## Python
-We tested our code on [Python](https://www.python.org/) version 3.8.0 
+We tested our code on [Python](https://www.python.org/) version 3.8.0   
 [Download](https://www.python.org/downloads/release/python-380/)
 
 ## OpenCV
