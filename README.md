@@ -1,11 +1,11 @@
 Hetero Stereo Matching
 =======================
 
+The code works best on Ubuntu 20.04
+The source code is released under the **MIT License**.
+
 # Project Page
 [https://haram-kim.github.io/Hetero_Stereo_Matching/](https://haram-kim.github.io/Hetero_Stereo_Matching/)
-
-The source code is released under the **MIT License**.
-The code works best on Ubuntu 20.04
 
 # Prerequisites
 ## Python
