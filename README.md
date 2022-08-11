@@ -13,7 +13,7 @@ We tested our code on [Python](https://www.python.org/) version 3.8.0
 We use [OpenCV](http://opencv.org) to visualize and manipulate images.
 
 ## CUDA
-We use [CUDA](https://developer.nvidia.com/cuda-toolkit) for parallel computation.
+We use [CUDA](https://developer.nvidia.com/cuda-toolkit) for parallel computation.  
 [Download](https://developer.nvidia.com/cuda-downloads) [Installation guide](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/)
 
 ### pyCUDA for python
