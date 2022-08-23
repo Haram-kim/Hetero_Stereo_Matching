@@ -139,12 +139,16 @@ class DataLoaderDSEC:
             cam1_image_E2VID = np.zeros_like(self.cam0.resolution)
         # load disparity
         try:
-            image_disparity = cv2.cvtColor(cv2.imread(self.disparity_image_paths[np.int(idx/2)]),
-                                            cv2.COLOR_RGB2GRAY).astype(np.uint16)  
-            image_disparity = self.cam0.rectify(image_disparity, cv2.INTER_NEAREST)*(
-                (self.cam0.K_rect[0][0]+self.cam0.K_rect[1][1])/(self.cam0.K[0][0]+self.cam0.K[1][1])
-                *self.cam0.baseline/self.cam0.baseline_gt)
-            success = True
+            if idx%2 == 0:
+                image_disparity = cv2.cvtColor(cv2.imread(self.disparity_image_paths[int(idx/2)]),
+                                                cv2.COLOR_RGB2GRAY).astype(np.uint16)  
+                image_disparity = self.cam0.rectify(image_disparity, cv2.INTER_NEAREST)*(
+                    (self.cam0.K_rect[0][0]+self.cam0.K_rect[1][1])/(self.cam0.K[0][0]+self.cam0.K[1][1])
+                    *self.cam0.baseline/self.cam0.baseline_gt)
+                success = True
+            else:
+                image_disparity = np.zeros_like(self.cam0.resolution)
+                success = False
         except:
             image_disparity = np.zeros_like(self.cam0.resolution)
             success = False
