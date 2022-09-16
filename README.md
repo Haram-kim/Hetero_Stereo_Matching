@@ -1,8 +1,6 @@
 Hetero Stereo Matching
 =======================
-<img src="/snapshot/frame.png" alt="frame" width="400"/>
-<img src="/snapshot/event.png" alt="event" width="400"/>
-<img src="/snapshot/depth.png" alt="depth" width="400"/>
+<img src="/snapshot/frame.png" alt="frame" width="250"/> <img src="/snapshot/event.png" alt="event" width="250"/> <img src="/snapshot/depth.png" alt="depth" width="250"/>
 
 The source code is released under the **MIT License**.
 
