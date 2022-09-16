@@ -40,6 +40,7 @@ class Feature:
         self.id = Feature.id        
         Feature.id += 1
         self.is_extracted = True
+        self.is_tracked = False
 
     def clear(self):
         self.id = -1
@@ -54,7 +55,6 @@ class FeatureTracker:
         self.cam0 = params['cam0']
         self.cam1 = params['cam1']
         self.feature_num = params['feature num']
-        self.prevfeature_num = self.feature_num
         self.track_win_size = params['track_win_size']
         self.extract_win_size = params['extract_win_size']
         self.track_err_thres = params['track_err_thres']
@@ -81,7 +81,6 @@ class FeatureTracker:
         self.previmage = self.image
         self.prevfeatures = copy.deepcopy(self.features)
         self.prevfeature_idx = self.feature_idx
-        self.prevfeature_num = self.feature_num
 
         image = image.astype(np.uint8)
         self.image = image
@@ -108,7 +107,6 @@ class FeatureTracker:
 
         self.feature_idx = [i for i in range(self.feature_num)
                 if self.features[i].is_extracted]
-        self.feature_num = len(self.feature_idx)
         # update parameters
 
     def track_feature(self, image):
