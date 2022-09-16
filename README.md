@@ -1,9 +1,15 @@
 Hetero Stereo Matching
 =======================
 
+<video controls width="400">
+    <source src="https://larr.snu.ac.kr/haramkim/HSM/proposed.mp4"
+            type="video/mp4">
+</video>
+
 The source code is released under the **MIT License**.
 
 # Project Page
+
 You can see the high-quality video at:  
 [https://haram-kim.github.io/Hetero_Stereo_Matching/](https://haram-kim.github.io/Hetero_Stereo_Matching/)
 
