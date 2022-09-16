@@ -64,12 +64,13 @@ Directory structure :
 ...
 
 
-└────interlaken_00_g
-     ├────interlaken_00_c_calibration
-     
-     ...
-     
-     └────interlaken_00_c_image_timestamps.txt
+├────interlaken_00_g
+│    ├────interlaken_00_g_calibration
+│    
+│    ...
+│    
+│    └────interlaken_00_g_image_timestamps.txt
+└────interlaken_00_g_processed_data.hdf5
 ```
 
 1. Clone this repository:
