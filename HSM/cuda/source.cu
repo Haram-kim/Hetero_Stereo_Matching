@@ -141,9 +141,9 @@ __global__ void clear_event_image(int *event_image){
 __global__ void clear_AEI(float *AEI){
     const unsigned int tidx = blockDim.x * blockIdx.x + threadIdx.x;
     const unsigned int tidy = blockDim.y * blockIdx.y + threadIdx.y;    
-    for (int d = MIN_DISP; d <= MAX_DISP; d++){
+    for (int d = MIN_DISP; d <= MAX_DISP + 1; d++){
         int tid = get_cost_idx(tidx, tidy, d);
-        if(tid < WIDTH*HEIGHT*(MAX_DISP-MIN_DISP)){
+        if(tid < WIDTH*HEIGHT*(MAX_DISP-MIN_DISP + 1)){
             AEI[tid] = 0;
         }
     }
