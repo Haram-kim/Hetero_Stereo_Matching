@@ -44,7 +44,7 @@ struct Point3d{
         return {a * x, a * y, a * z};
     }
     __device__ inline Point3d operator/(const float &a){
-        return {a / x, a / y, a / z};
+        return {x / a, y /a, z / a};
     }
 };
 
