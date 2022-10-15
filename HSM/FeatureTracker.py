@@ -165,7 +165,7 @@ class FeatureTracker:
     def drawMapPoint(self, T):
         T = np.eye(4)
         map_pts, image_pts = self.get_map_points()
-        map_pts_c = np.matmul(np.concatenate([map_pts, np.ones((len(map_pts), 1))], 1), la.inv(T).T)
+        map_pts_c = np.matmul(np.concatenate([map_pts, np.ones((len(map_pts), 1))], 1), T.T)
         map_pts_proj_c = np.matmul(np.divide(map_pts_c[:, :3], map_pts_c[:, 2].reshape(-1,1)), self.cam0.K_rect.T)
 
         draw_image = cv2.cvtColor(np.zeros_like(self.image, dtype=np.uint8), cv2.COLOR_GRAY2RGB)
@@ -197,10 +197,9 @@ class FeatureTracker:
         success, r, t, inlier = cv2.solvePnPRansac(map_pts, image_pts, self.cam0.K_rect, np.zeros((5,1)))
         r = r.squeeze()
         t = t.squeeze()
-        T_inv = np.eye(4)
-        T_inv[:3, :3] = SO3(r)
-        T_inv[:3, 3] = t
-        T = la.inv(T_inv)
+        T = np.eye(4)
+        T[:3, :3] = SO3(r)
+        T[:3, 3] = t
         self.drawMapPointReproj(T)
         return T
 
